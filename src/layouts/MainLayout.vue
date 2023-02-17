@@ -29,11 +29,12 @@
           <q-list>
             <q-item clickable v-close-popup @click="onItemClick">
               <q-item-section avatar>
-                <q-avatar icon="folder" color="primary" text-color="white" />
+                <q-avatar icon="exit_to_app" color="primary" text-color="white" />
               </q-item-section>
               <q-item-section>
-                <q-item-label>Photos</q-item-label>
-                <q-item-label caption>February 22, 2016</q-item-label>
+                  <q-item-label>
+                    Logout
+                  </q-item-label>
               </q-item-section>
               <q-item-section side>
                 <q-icon name="info" color="amber" />
@@ -102,6 +103,12 @@ const essentialLinks: EssentialLinkProps[] = [
     caption: 'Code something',
     icon: 'description',
     link: '/test'
+  },
+  {
+    title: 'Buildings',
+    caption: 'Manage buildings',
+    icon: 'home',
+    link: '/building'
   },
 ];
 
